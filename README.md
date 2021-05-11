@@ -1,18 +1,19 @@
-# tableau-challenge
-
 ## Tableau Workbook
 1) TableauChallenge.twbx  Tableau workbook with Story and Dashboards identifying key trends <br />
 2) Link to Tableau public version of the file - https://public.tableau.com/views/TableauChallenge_16205370254260/CityBikeTrendStory?:language=en&:display_count=y&publish=yes&:origin=viz_share_link <br />
 
+## Original data source
+1) https://www.citibikenyc.com/system-data
+
 ## Key Files in this repository
 1) TableauChallenge.twbx  Tableau workbook with Story and Dashboards identifying key trends <br />
 2) CombineCsvFiles.ipynb jupyter notebook used to combine monthly files into Resources\BikeDataCombined.csv that is too big to push to GitHub<br />
-2) Resources\*.csv monthly csv files and a combined dataset of all monthly files <br />
-3) Resources\StationDataSet\CreateBikeDataTable.sql - create postgresSQL tables to hold station dataset for City Official map<br />
-4) Resources\StationDataSet\InsertIntoStationTables.sql - Insert into BikeDataStations table to be exported into csv for review in tableau<br />
-5) Resources\StationDataSet\BikeStationDataset - by station by month totals csv file for analysis in Tableau<br />
+3) Resources\*.csv monthly csv files and a combined dataset of all monthly files <br />
+4) Resources\StationDataSet\CreateBikeDataTable.sql - create postgresSQL tables to hold station dataset for City Official map<br />
+5) Resources\StationDataSet\InsertIntoStationTables.sql - Insert into BikeDataStations table to be exported into csv for review in tableau<br />
+6) Resources\StationDataSet\BikeStationDataset - by station by month totals csv file for analysis in Tableau<br />
 
-## CityBike Analysis
+## CitiBike Analysis
 1) Total trips overall 2019 to 2020 are down 16% - This is expected due to Covid but trips seem to be recovering Summer/end of 2020<br /><br />
 2) Subscriber levels dropped in 2020 - Summer appears to have more non subscriber usage in both years.  This could be caused by tourists and expected recreational use in summer.  We see the subscriber percentage higher in winter months (around 80% subscriber 2019 verus > 90% subscriber in 2020). In spring/summer 2020 however, we saw a more pronounced drop in subscriber usage.  Summer in 2019 we see roughly 80% some percent of trips were by subscribers.  In summer 2020 that dropped to around 50%.  This is likely due to covid19 more than true changes in user model.  We see the percentage of subscribers ticking back up closer to 2019 levels towards end of 2020 (December 2020 at 80% subscriber trips versus December 2019 at 93% subscriber trips) <br /><br />
 3) Female ridership may be increasing - Over the period evaluated from 2019 through 2020, females took 19-24% of trips in 2019 versus a range of 21% to almost 27% of trips in 2020.  While it’s hard to tell if this is a true trend, it appears to be moving in the direction of increased female ridership.  It also appears that female proportion of trips peaks in summer months.  This may indicate they are more recreational users.  One additional trend we see in gender analysis is an increase in trips with unknown gender.  We do not know if this is a data issue where users were not able to provide the information or if more and more people are not considering themselves male or female and have no other options but to select Unknown.  Around 20% of trips in summer 2020 had gender as unknown versus roughly half that in 2019.<br /><br />
